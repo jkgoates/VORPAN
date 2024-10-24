@@ -111,7 +111,7 @@ class Solver:
                                             + ((2*self._airfoil.nodes[i,1]*self.gamma[i] + self._airfoil.nodes[i,1]*self.gamma[i+1] + self._airfoil.nodes[i+1,1]*self.gamma[i] + 2*self._airfoil.nodes[i+1,1]*self.gamma[i+1])/self._V_inf)*np.sin(np.deg2rad(self._alpha)))
         self.C_m_le = -1/3 * self.C_m_le
 
-        self.C_m_qtr = self.C_m_le + 0.25*self.C_L
+        self.C_m_qtr = self.C_m_le + 0.25*self.C_L*np.cos(np.deg2rad(self._alpha))
         print('Done.')
 
         print("       C_L: ",self.C_L)
