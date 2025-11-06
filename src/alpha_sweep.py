@@ -91,7 +91,7 @@ def get_data_column_from_array(headers, data, col_des):
 if __name__ == "__main__":
 
     
-    alpha_deg = np.linspace(-10,10,21)
+    alpha_deg = np.linspace(-12,16,29)
     geometries = ["2412", "2421", "0015"]
     alpha_L_0 = [-2.077, -2.077, 0.0]
     #experimental = 
