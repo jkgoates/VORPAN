@@ -1,0 +1,19 @@
+{
+    "geometry": {
+        "cylinder_radius" : 2.0
+    },
+    "operating" : {
+        "freestream_velocity" : 10.0,
+        "alpha[deg]" : 15,
+        "vortex_strength": 80
+    },
+    "plot_options" : {
+        "x_start" : -5,
+        "x_lower_limit" : -5.0,
+        "x_upper_limit" : 5.0,
+        "delta_s" : 0.01,
+        "n_lines" : 20,
+        "delta_y" : 0.4
+
+    }
+}
